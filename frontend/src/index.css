@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.5rem;
+        
+        /* White and yellow theme for professional, energetic aesthetic */
+        --background: 1 0 0;
+        --foreground: 0.20 0.01 60;
+        
+        --card: 0.99 0 0;
+        --card-foreground: 0.20 0.01 60;
+        
+        --popover: 1 0 0;
+        --popover-foreground: 0.20 0.01 60;
+        
+        /* Primary: Deep charcoal for authority and contrast */
+        --primary: 0.25 0.015 60;
+        --primary-foreground: 1 0 0;
+        
+        /* Secondary: Light warm gray for subtle contrast */
+        --secondary: 0.96 0.005 60;
+        --secondary-foreground: 0.25 0.015 60;
+        
+        --muted: 0.96 0.005 60;
+        --muted-foreground: 0.50 0.01 60;
+        
+        /* Accent: Vibrant yellow for CTAs and highlights */
+        --accent: 0.85 0.18 95;
+        --accent-foreground: 0.20 0.01 60;
+        
+        --destructive: 0.55 0.22 25;
+        --destructive-foreground: 0.99 0 0;
+        
+        --border: 0.90 0.005 60;
+        --input: 0.90 0.005 60;
+        --ring: 0.85 0.18 95;
+        
+        /* Card color variations for visual interest */
+        --card-yellow: 0.97 0.08 95;
+        --card-yellow-foreground: 0.20 0.01 60;
+        --card-amber: 0.95 0.10 75;
+        --card-amber-foreground: 0.20 0.01 60;
+        --card-warm: 0.96 0.05 50;
+        --card-warm-foreground: 0.20 0.01 60;
+        --card-light: 0.98 0.03 95;
+        --card-light-foreground: 0.20 0.01 60;
+        
+        --chart-1: 0.85 0.18 95;
+        --chart-2: 0.75 0.15 75;
+        --chart-3: 0.90 0.20 85;
+        --chart-4: 0.80 0.16 65;
+        --chart-5: 0.88 0.19 100;
+    }
+
+    .dark {
+        --background: 0.15 0.015 60;
+        --foreground: 0.98 0.005 60;
+        
+        --card: 0.20 0.015 60;
+        --card-foreground: 0.98 0.005 60;
+        
+        --popover: 0.18 0.015 60;
+        --popover-foreground: 0.98 0.005 60;
+        
+        --primary: 0.90 0.005 60;
+        --primary-foreground: 0.15 0.015 60;
+        
+        --secondary: 0.25 0.015 60;
+        --secondary-foreground: 0.98 0.005 60;
+        
+        --muted: 0.25 0.015 60;
+        --muted-foreground: 0.65 0.01 60;
+        
+        --accent: 0.75 0.18 95;
+        --accent-foreground: 0.15 0.015 60;
+        
+        --destructive: 0.60 0.20 25;
+        --destructive-foreground: 0.98 0.005 60;
+        
+        --border: 0.28 0.015 60;
+        --input: 0.28 0.015 60;
+        --ring: 0.75 0.18 95;
+        
+        /* Card color variations for dark mode */
+        --card-yellow: 0.30 0.08 95;
+        --card-yellow-foreground: 0.98 0.005 60;
+        --card-amber: 0.28 0.10 75;
+        --card-amber-foreground: 0.98 0.005 60;
+        --card-warm: 0.26 0.05 50;
+        --card-warm-foreground: 0.98 0.005 60;
+        --card-light: 0.24 0.03 95;
+        --card-light-foreground: 0.98 0.005 60;
+        
+        --chart-1: 0.75 0.18 95;
+        --chart-2: 0.65 0.15 75;
+        --chart-3: 0.80 0.20 85;
+        --chart-4: 0.70 0.16 65;
+        --chart-5: 0.78 0.19 100;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+}

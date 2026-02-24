@@ -1,0 +1,74 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-23T16:48:51.610Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 2,
+    "items": [
+      {
+        "id": "REQ-16",
+        "summary": "Update the global color theme to use white as the primary background color and yellow as the primary accent color throughout the application",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/tailwind.config.js",
+          "frontend/src/index.css"
+        ],
+        "matchedFiles": [
+          "frontend/tailwind.config.js",
+          "frontend/src/index.css"
+        ]
+      },
+      {
+        "id": "REQ-17",
+        "summary": "Add background colors to all card components across all pages (Home, About, Services, GCC, Industries, Insights, Careers, Contact) to make them visually distinct",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/Home.tsx",
+          "frontend/src/pages/About.tsx",
+          "frontend/src/pages/Services.tsx",
+          "frontend/src/pages/GCC.tsx",
+          "frontend/src/pages/Industries.tsx",
+          "frontend/src/pages/Insights.tsx",
+          "frontend/src/pages/Careers.tsx",
+          "frontend/src/pages/Contact.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/Home.tsx",
+          "frontend/src/pages/About.tsx",
+          "frontend/src/pages/Services.tsx",
+          "frontend/src/pages/GCC.tsx",
+          "frontend/src/pages/Industries.tsx",
+          "frontend/src/pages/Insights.tsx",
+          "frontend/src/pages/Careers.tsx",
+          "frontend/src/pages/Contact.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "build-template/README.md",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/index.css",
+    "frontend/src/pages/About.tsx",
+    "frontend/src/pages/Careers.tsx",
+    "frontend/src/pages/Contact.tsx",
+    "frontend/src/pages/GCC.tsx",
+    "frontend/src/pages/Home.tsx",
+    "frontend/src/pages/Industries.tsx",
+    "frontend/src/pages/Insights.tsx",
+    "frontend/src/pages/Services.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

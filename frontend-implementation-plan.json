@@ -1,0 +1,87 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Change color theme to white and yellow with colored cards",
+  "requirements": [
+    {
+      "id": "REQ-16",
+      "summary": "Update the global color theme to use white as the primary background color and yellow as the primary accent color throughout the application",
+      "acceptanceCriteria": [
+        "Primary background colors are white or very light neutral tones",
+        "Yellow is used as the primary accent color for buttons, links, and highlights",
+        "The color palette in tailwind.config.js and index.css is updated to reflect white and yellow theme",
+        "Dark mode (if present) maintains appropriate contrast with yellow accents"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Update the custom OKLCH color system to use white/light neutral tones as primary background colors and yellow as the primary accent color. Replace the current slate/emerald palette with white backgrounds and yellow accents for buttons, links, and highlights. Ensure dark mode maintains appropriate contrast with yellow accents."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Update the Tailwind CSS custom design tokens to reflect the white and yellow theme. Modify CSS variables for light and dark modes to use white/light neutral backgrounds and yellow as the primary accent color. Ensure all corporate-style theming variables align with the new color scheme."
+        }
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "summary": "Add background colors to all card components across all pages to make them visually distinct",
+      "acceptanceCriteria": [
+        "All card components on Home page have visible background colors",
+        "All card components on About page have visible background colors",
+        "All card components on Services page have visible background colors",
+        "All card components on GCC page have visible background colors",
+        "All card components on Industries page have visible background colors",
+        "All card components on Insights page have visible background colors",
+        "All card components on Careers page have visible background colors",
+        "All card components on Contact page have visible background colors",
+        "Card colors are complementary to the white and yellow theme",
+        "Card colors provide sufficient contrast for text readability"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Home.tsx",
+          "operation": "modify",
+          "description": "Add visible background colors to all card components on the Home page including service cards (GCC/AI/Talent/Delivery), differentiators list items, industry cards, and engagement step cards. Use colors complementary to the white and yellow theme with sufficient contrast for text readability."
+        },
+        {
+          "path": "frontend/src/pages/About.tsx",
+          "operation": "modify",
+          "description": "Add visible background colors to all card components on the About page including mission/vision cards and leadership team member cards. Use colors complementary to the white and yellow theme with sufficient contrast for text readability."
+        },
+        {
+          "path": "frontend/src/pages/Services.tsx",
+          "operation": "modify",
+          "description": "Add visible background colors to all four service offering cards (GCC, AI Transformation, Talent, Managed Delivery) on the Services page. Use colors complementary to the white and yellow theme with sufficient contrast for text readability."
+        },
+        {
+          "path": "frontend/src/pages/GCC.tsx",
+          "operation": "modify",
+          "description": "Add visible background colors to all card components on the GCC page including benefits cards and the three-phase approach cards (Assess, Setup, Scale). Use colors complementary to the white and yellow theme with sufficient contrast for text readability."
+        },
+        {
+          "path": "frontend/src/pages/Industries.tsx",
+          "operation": "modify",
+          "description": "Add visible background colors to all five industry vertical cards (Banking, Healthcare, Retail, Technology, Manufacturing) on the Industries page. Use colors complementary to the white and yellow theme with sufficient contrast for text readability."
+        },
+        {
+          "path": "frontend/src/pages/Insights.tsx",
+          "operation": "modify",
+          "description": "Add visible background colors to all article cards on the Insights page showing GCC trends, AI transformation, global delivery, and talent market content. Use colors complementary to the white and yellow theme with sufficient contrast for text readability."
+        },
+        {
+          "path": "frontend/src/pages/Careers.tsx",
+          "operation": "modify",
+          "description": "Add visible background colors to all card components on the Careers page including benefits cards and open position cards. Use colors complementary to the white and yellow theme with sufficient contrast for text readability."
+        },
+        {
+          "path": "frontend/src/pages/Contact.tsx",
+          "operation": "modify",
+          "description": "Add visible background colors to card components on the Contact page including the form container and contact information display sections. Use colors complementary to the white and yellow theme with sufficient contrast for text readability."
+        }
+      ]
+    }
+  ]
+}

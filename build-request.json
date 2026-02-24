@@ -1,0 +1,67 @@
+{
+  "kind": "build_request",
+  "title": "Change color theme to white and yellow with colored cards",
+  "projectName": "ARS Consulting",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-16",
+      "text": "Update the global color theme to use white as the primary background color and yellow as the primary accent color throughout the application",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-latest"
+        ],
+        "quotes": [
+          "change the colour theme to white and yellow"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Primary background colors are white or very light neutral tones",
+        "Yellow is used as the primary accent color for buttons, links, and highlights",
+        "The color palette in tailwind.config.js and index.css is updated to reflect white and yellow theme",
+        "Dark mode (if present) maintains appropriate contrast with yellow accents"
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "text": "Add background colors to all card components across all pages (Home, About, Services, GCC, Industries, Insights, Careers, Contact) to make them visually distinct",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-latest"
+        ],
+        "quotes": [
+          "put some colours in cards on each page"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All card components on Home page have visible background colors",
+        "All card components on About page have visible background colors",
+        "All card components on Services page have visible background colors",
+        "All card components on GCC page have visible background colors",
+        "All card components on Industries page have visible background colors",
+        "All card components on Insights page have visible background colors",
+        "All card components on Careers page have visible background colors",
+        "All card components on Contact page have visible background colors",
+        "Card colors are complementary to the white and yellow theme",
+        "Card colors provide sufficient contrast for text readability"
+      ]
+    }
+  ],
+  "constraints": [
+    "Maintain existing page layouts and content structure",
+    "Preserve all existing functionality",
+    "Do not modify immutable paths: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui"
+  ],
+  "nonGoals": [
+    "Adding new pages or content",
+    "Changing the navigation structure",
+    "Modifying backend functionality",
+    "Redesigning the overall layout or information architecture"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

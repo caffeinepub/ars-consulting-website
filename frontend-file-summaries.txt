@@ -1,0 +1,16 @@
+{
+  "frontend/src/App.tsx": "Main application component with TanStack Router configuration for all 8 pages (Home, About, Services, GCC, Industries, Insights, Careers, Contact) with shared Header/Footer layout.",
+  "frontend/src/components/Header.tsx": "Responsive navigation header with logo, desktop/mobile menus, and active route highlighting for all 8 pages.",
+  "frontend/src/components/Footer.tsx": "Footer component with company info, quick links, resources, social media, copyright, and Caffeine.ai attribution with UTM tracking.",
+  "frontend/src/pages/Home.tsx": "Home page with hero section, service cards, differentiators, industries, and engagement model sections, all featuring yellow/amber/warm card background colors for visual distinction.",
+  "frontend/src/pages/About.tsx": "About page with company story, mission/vision cards, and leadership team cards, all featuring yellow/amber/warm background colors.",
+  "frontend/src/pages/Services.tsx": "Services page with four service offering cards (GCC, AI, Talent, Delivery), each with distinct yellow/amber/warm/light background colors.",
+  "frontend/src/pages/GCC.tsx": "GCC page with benefits cards and three-phase approach cards, all featuring yellow/amber/warm background colors for visual hierarchy.",
+  "frontend/src/pages/Industries.tsx": "Industries page with five industry vertical cards, each featuring alternating yellow/amber/warm/light background colors.",
+  "frontend/src/pages/Insights.tsx": "Insights page with article cards in a grid layout, each featuring alternating yellow/amber/warm/light background colors.",
+  "frontend/src/pages/Careers.tsx": "Careers page with benefits cards, open position cards, and talent community form, all featuring yellow/amber/warm/light background colors.",
+  "frontend/src/pages/Contact.tsx": "Contact page with contact form and information cards, each featuring distinct yellow/amber/warm/light background colors.",
+  "frontend/src/index.css": "Global styles with white and yellow OKLCH color palette featuring vibrant yellow accents, white backgrounds, and multiple card color variations (yellow, amber, warm, light) for visual interest across light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration with custom color tokens for white and yellow theme including card color variations (yellow, amber, warm, light) mapped to OKLCH CSS variables.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file for future React Query hooks when backend functionality is added."
+}
